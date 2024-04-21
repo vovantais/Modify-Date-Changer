@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.vovantais.ChangeDate</id>
+    <name>Modify date changer</name>
+    <vendor email="gedeikov@gmail.com" url="https://github.com/vovantais">Vladimir Gedeiko</vendor>
+
+    <description><![CDATA[
+    This plugin for change date for Descriptor.json file.<br>
+    <em>Hot keys to run ctrl+alt+\</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+
+        <action id="DateChanger" class="DateChanger" text="DateChanger" description="Date Changer">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt BACK_SLASH"/>
+        </action>
+    </actions>
+</idea-plugin>

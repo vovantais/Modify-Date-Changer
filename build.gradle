@@ -1,0 +1,16 @@
+plugins {
+    id 'org.jetbrains.intellij' version '1.17.3'
+}
+
+group 'com.vovantais'
+version '1.0-SNAPSHOT'
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version = "2024.1"
+    type = "IU"
+}
+
+repositories {
+    mavenCentral()
+}
